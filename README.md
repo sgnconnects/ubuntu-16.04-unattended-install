@@ -1,4 +1,6 @@
 # Ubuntu 16.04 Unattended-Install for UEFI using preseed
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsgnconnects%2Fubuntu-16.04-unattended-install.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsgnconnects%2Fubuntu-16.04-unattended-install?ref=badge_shield)
+
 Create a Legacy and UEFI automated Ubuntu ISO installer. Using preseed.cfg and post-install scripts, this can completely automate installing Ubuntu 16.04. This may work with other distros, but I have yet to test this. Your personal variables such as default packages, SSH keys and username/password will obviously need to be edited before use.
 
 Follow the steps below to create your own image.
@@ -103,3 +105,7 @@ The preseed uses wget to download your post-install.sh file to the /tmp folder j
 
 _Unfortunately, there seems to be a bug in Xenial which ignores the hostname set in the preseed file. Therefore, a default hostname is set within grub to remove the prompt during installation. If you know a better way around this, please commit a PR!_
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsgnconnects%2Fubuntu-16.04-unattended-install.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsgnconnects%2Fubuntu-16.04-unattended-install?ref=badge_large)
